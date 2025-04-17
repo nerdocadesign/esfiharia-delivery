@@ -24,10 +24,12 @@
 </head>
 <body>
 <div class="container">
-  <div class="header">
-    <h1>Esfiharia Delivery</h1>
+  <header class="header-esfiharia">
+  <div class="banner-foto">
+    <img src="https://cozinhandodiferente.com.br/wp-content/uploads/2024/09/esfiha-aberta-receita-500x500.jpg" alt="Esfihas deliciosas" class="foto-esfihas">
+    <h1 class="nome-esfiharia">Delysfiharia Delivery</h1>
   </div>
-  
+</header>
   <div class="top-info">
     <input type="text" id="nomeCliente" placeholder="Seu nome" required>
     <input type="text" id="enderecoCliente" placeholder="Endereço completo (opcional)">
@@ -77,8 +79,8 @@
     { id: 20, nome: 'Atum, queijo, bacon, cebola', categoria: 'salgadas', preco: 'R$ 6,00' },
     { id: 21, nome: 'Palmito, queijo', categoria: 'salgadas', preco: 'R$ 6,00' },
     { id: 22, nome: 'Palmito, queijo, cream cheese', categoria: 'salgadas', preco: 'R$ 6,00' },
-    { id: 23, nome: 'Esfiha de Queijo', categoria: 'doces', preco: 'R$ 5,00' },
-    { id: 24, nome: 'Esfiha de Carne', categoria: 'doces', preco: 'R$ 6,00' },
+    { id: 23, nome: 'Nutella', categoria: 'doces', preco: 'R$ 5,00' },
+    { id: 24, nome: 'Brigadeiro', categoria: 'doces', preco: 'R$ 6,00' },
     { id: 25, nome: 'Coca-Cola 350ml', categoria: 'bebidas', preco: 'R$ 4,50' },
     { id: 26, nome: 'Coca-Cola 2L', categoria: 'bebidas', preco: 'R$ 9,00' },
     { id: 27, nome: 'Guaraná Antarctica 2L', categoria: 'bebidas', preco: 'R$ 8,00' },
@@ -228,7 +230,7 @@
       if (check.checked) {
         const subtotal = preco * qtd;
         total += subtotal;
-        mensagem += `🍕 *${nomeProduto}* - ${qtd} un - R$${subtotal.toFixed(2).replace('.', ',')}\n`;
+        mensagem += `* *${nomeProduto}* - ${qtd} un - R$${subtotal.toFixed(2).replace('.', ',')}\n`;
         algum = true;
       }
     });
