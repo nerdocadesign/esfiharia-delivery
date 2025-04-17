@@ -49,7 +49,7 @@
 
   <div class="resumo-container">
     <div class="resumo" id="resumoPedido">
-      Total: R$0.00 – 0 itens
+      🛒 Total: R$0.00 – 0 itens
     </div>
     <button class="finalizar" onclick="enviarPedido()">Enviar Pedido</button>
   </div>
@@ -212,7 +212,7 @@
       return;
     }
 
-    let mensagem = `🛒 *Pedido de Esfiharia* – Cliente: ${nome}\n\n`;
+    let mensagem = `*Pedido de Esfiharia* – Cliente: ${nome}\n\n`;
     if (endereco) mensagem += `📍 *Endereço*: ${endereco}\n`;
     if (obs) mensagem += `📝 *Observação*: ${obs}\n`;
 
